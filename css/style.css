@@ -1,25 +1,33 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+body { 
+  margin: 0; padding: 0; height: 100%; overflow: hidden
 }
 
-body {
-  background: #fdfdfd;
-  font-family: "Nunito", sans-serif;
-  font-size: 1rem;
-}
-
-main {
-  max-width: 900px;
+.content {
+  max-width: 500px;
   margin: auto;
-  padding: 0.5rem;
-  text-align: center;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
+.map { 
+  position: absolute; top: 0; bottom: 0; width: 100%; 
+}
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  background-color: #005aff;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
